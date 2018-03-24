@@ -1,7 +1,5 @@
 
 
-
-
 let findIslands = function (map) {
   let numberOfIslans = 0,
     yLen = map.length;
@@ -11,9 +9,8 @@ let findIslands = function (map) {
     lastIndexIsland = -1;
 
   for(let y = 0; y < yLen; y += 1) {
-    let row = map[y];
     for(let x = 0; x < xLen; x += 1) {
-       if(row[x] === 1) {
+       if(map[y][x] === 1) {
          if((lastIndexIsland === -1 || lastIndexIsland !== x - 1) && !lastRowIndexesIsland.hasOwnProperty(x)) {
             numberOfIslans += 1;
          }
