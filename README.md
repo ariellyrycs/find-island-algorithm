@@ -29,4 +29,4 @@ Should return 3
   ]
   ```
 
-The algorithm should only accept island unifications when it's vertical/horizondal, in this case, it should count only 2.
+The algorithm should only accept island unifications when it's vertical/horizontal, in this case, it should count only 2.
